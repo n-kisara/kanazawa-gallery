@@ -34,6 +34,6 @@ for(let i = 0;i < images.length;i++) {
 thumbnails.addEventListener('click',function(e) {
     if(e.target.src) {
         image.src = e.target.src;
-        description.textContent = alt.src;
+        description.textContent = e.target.alt;
     }
 },false);    
